@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    container_name: python-sshx
+    restart: always
+    ports:
+      - "80:80"   # Web server
+    environment:
+      - FLASK_ENV=production
