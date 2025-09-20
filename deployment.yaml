@@ -1,0 +1,10 @@
+source: clear
+features:
+  - docker
+
+services:
+  app:
+    build: .
+    restart: always
+    ports:
+      - 80:80   # Python web server
